@@ -11,7 +11,7 @@ body {
     color: white;
 }
 #page-wrap > .main{
-    border: 1px solid #999;
+    border: 3px solid #999;
     padding: 1%;
     margin-bottom: 1px;
     color: black;
@@ -29,8 +29,20 @@ footer{
     text-align: center;
 }
 nav span{
-    margin: 0px 10px 0px 0px;   
+    margin: 0px 10px 0px 0px; 
+    width: 100%;
+    display: inline-block;
+}
+img{
+    padding: 30px 10px 10px 10px;
+    width: auto;
+    height: auto;
+    
 }
 a {
   color: #00B7FF;
 }
+#ErrorMsgs           { color: #f61; font-size: smaler}
+.right 				 {float: right;}
+
+.quiz_img 			 { height: 150px; float: left;}
