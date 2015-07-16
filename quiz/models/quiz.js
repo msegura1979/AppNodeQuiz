@@ -1,6 +1,8 @@
- var path = require('path');
-//Cargamos el Modelo ORM
-var Sequelize = require('sequelize');
-//Usar BBDD Sqlite
-var sequelize = new Sequelize(null,null,null,
-                             {dialect:"sqlite", storage: "quiz.sqlite"})
+//DEfinicion del modelo de Quiz ,define la tabla
+
+module.exports = function(sequelize, DataTypes){
+    return sequelize.define('Quiz',{
+        pregunta: DataTypes.STRING,
+        respuesta: DataTypes.STRING,
+    });
+}
